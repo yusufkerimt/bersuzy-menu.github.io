@@ -4,7 +4,7 @@
     "restaurants": [
       {
         "id": "rest-ankara-1",
-        "name": "Bersuzy Cafe — Kızılay",
+        "name": "Bersuzy Izgara",
         "description": "Şehrin kalbinde taze ve hızlı seçenekler.",
         "image": "burger.jpg",
         "categories": [
@@ -49,7 +49,7 @@
       },
       {
         "id": "rest-istanbul-1",
-        "name": "Bersuzy Pizzeria — Kadıköy",
+        "name": "Bersuzy Kahvaltılık",
         "description": "İnce hamur, taze malzeme, odun ateşinde pişmiş lezzetler.",
         "image": "pizza.jpg",
         "categories": [
