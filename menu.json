@@ -1,0 +1,95 @@
+{
+    "company": "Bersuzy Company",
+    "updated_at": "2025-10-25T00:00:00Z",
+    "restaurants": [
+      {
+        "id": "rest-ankara-1",
+        "name": "Bersuzy Cafe — Kızılay",
+        "description": "Şehrin kalbinde taze ve hızlı seçenekler.",
+        "image": "burger.svg",
+        "categories": [
+          {
+            "name": "Burgerler",
+            "products": [
+              {
+                "id": "b1",
+                "name": "Klasik Dana Burger",
+                "description": "180g dana kıyması, cheddar, marul, ev sosu.",
+                "price": 85.00,
+                "currency": "₺",
+                "image": "burger.svg",
+                "tags": ["popüler"]
+              },
+              {
+                "id": "b2",
+                "name": "Tavuklu Burger",
+                "description": "Izgara tavuk göğsü, roka, ballı hardal.",
+                "price": 78.50,
+                "currency": "₺",
+                "image": "",
+                "tags": []
+              }
+            ]
+          },
+          {
+            "name": "Salatalar",
+            "products": [
+              {
+                "id": "s1",
+                "name": "Akdeniz Salata",
+                "description": "Mevsim yeşillikleri, domates, salatalık, zeytinyağı.",
+                "price": 46.00,
+                "currency": "₺",
+                "image": "salad.svg",
+                "tags": ["vejetaryen"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rest-istanbul-1",
+        "name": "Bersuzy Pizzeria — Kadıköy",
+        "description": "İnce hamur, taze malzeme, odun ateşinde pişmiş lezzetler.",
+        "image": "pizza.svg",
+        "categories": [
+          {
+            "name": "Pizzalar",
+            "products": [
+              {
+                "id": "p1",
+                "name": "Margherita",
+                "description": "Domates, mozzarella, fesleğen.",
+                "price": 72.00,
+                "currency": "₺",
+                "image": "pizza.svg",
+                "tags": ["popüler", "vejetaryen"]
+              },
+              {
+                "id": "p2",
+                "name": "Pepperoni",
+                "description": "Bol pepperoni, mozzarella, özel sos.",
+                "price": 88.00,
+                "currency": "₺",
+                "image": "",
+                "tags": []
+              }
+            ]
+          },
+          {
+            "name": "Tatlılar",
+            "products": [
+              {
+                "id": "d1",
+                "name": "Tiramisu",
+                "description": "Kahveli mascarpone kreması.",
+                "price": 42.50,
+                "currency": "₺",
+                "image": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

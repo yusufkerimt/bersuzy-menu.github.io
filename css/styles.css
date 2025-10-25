@@ -1,0 +1,111 @@
+:root{
+    --bg:#fafafa;
+    --card:#ffffff;
+    --muted:#666;
+    --accent:#ff6b35;
+    --shadow: 0 6px 20px rgba(22,22,22,0.08);
+    --radius:12px;
+    --max-width:1100px;
+    --gap:16px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  
+  *{box-sizing:border-box}
+  html,body,#app{height:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:#111;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.4;
+  }
+  
+  .container{
+    max-width:var(--max-width);
+    margin:16px auto;
+    padding:0 16px 80px;
+  }
+  
+  /* Header */
+  .site-header{
+    position:sticky;
+    top:0;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    z-index:30;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 16px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .title{font-weight:600}
+  .hamburger{
+    width:44px;height:44px;border-radius:8px;border:0;background:transparent;display:inline-flex;
+    align-items:center;justify-content:center;cursor:pointer;
+  }
+  .hamburger .bar{display:block;width:20px;height:2px;background:#111;margin:3px 0;border-radius:2px;transition:all .15s}
+  
+  /* Nav */
+  .main-nav{display:none}
+  .main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px}
+  .main-nav a{color:var(--muted);text-decoration:none;font-size:0.95rem}
+  
+  /* Views */
+  .view{margin-top:18px}
+  .hidden{display:none}
+  
+  /* Grid */
+  .grid{display:grid;gap:var(--gap)}
+  /* restaurants grid */
+  #restaurantsGrid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+  .restaurant-card{
+    background:var(--card);padding:14px;border-radius:var(--radius);box-shadow:var(--shadow);
+    display:flex;gap:12px;align-items:center;cursor:pointer;border:1px solid rgba(0,0,0,0.03);
+  }
+  .restaurant-card img{width:74px;height:74px;border-radius:10px;object-fit:cover}
+  .restaurant-card h3{margin:0;font-size:1.05rem}
+  .restaurant-card p{margin:0;color:var(--muted);font-size:0.9rem}
+  
+  /* Menu header */
+  .menu-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0}
+  .menu-actions select{padding:8px 10px;border-radius:8px;border:1px solid #e6e6e6}
+  
+  /* categories tabs */
+  .categories-tabs{display:flex;gap:8px;overflow:auto;padding-bottom:8px;margin:8px 0}
+  .category-tab{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid #eee;cursor:pointer;white-space:nowrap}
+  .category-tab[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+  
+  /* products grid */
+  .products-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));margin-top:8px}
+  .product{
+    background:var(--card);padding:12px;border-radius:12px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:flex-start;
+    border:1px solid rgba(0,0,0,0.03);
+  }
+  .product img.product-img{width:96px;height:96px;border-radius:10px;object-fit:cover;flex-shrink:0}
+  .product .meta{flex:1;display:flex;flex-direction:column;gap:8px}
+  .product .meta h4{margin:0}
+  .product .meta p{margin:0;color:var(--muted);font-size:0.95rem}
+  .price{font-weight:700;color:var(--accent);font-size:1rem}
+  
+  /* back button */
+  .back-btn{background:transparent;border:0;color:var(--accent);cursor:pointer;padding:6px 0;font-weight:600}
+  
+  /* Footer */
+  .site-footer{padding:24px 16px;text-align:center;color:var(--muted);font-size:0.9rem}
+  
+  /* Responsive behaviors */
+  @media(min-width:900px){
+    .main-nav{display:block}
+    .hamburger{display:none}
+    #restaurantsGrid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    .container{padding:0 20px 120px}
+  }
+  
+  /* small screens tweaks */
+  @media(max-width:420px){
+    .product img.product-img{width:80px;height:80px}
+    .menu-header{flex-direction:column;align-items:flex-start;gap:8px}
+  }
