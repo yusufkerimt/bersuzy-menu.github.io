@@ -6,7 +6,7 @@
         "id": "rest-ankara-1",
         "name": "Bersuzy Cafe — Kızılay",
         "description": "Şehrin kalbinde taze ve hızlı seçenekler.",
-        "image": "burger.svg",
+        "image": "burger.jpg",
         "categories": [
           {
             "name": "Burgerler",
@@ -17,7 +17,7 @@
                 "description": "180g dana kıyması, cheddar, marul, ev sosu.",
                 "price": 85.00,
                 "currency": "₺",
-                "image": "burger.svg",
+                "image": "burger.jpg",
                 "tags": ["popüler"]
               },
               {
@@ -40,7 +40,7 @@
                 "description": "Mevsim yeşillikleri, domates, salatalık, zeytinyağı.",
                 "price": 46.00,
                 "currency": "₺",
-                "image": "salad.svg",
+                "image": "salad.jpg",
                 "tags": ["vejetaryen"]
               }
             ]
@@ -51,7 +51,7 @@
         "id": "rest-istanbul-1",
         "name": "Bersuzy Pizzeria — Kadıköy",
         "description": "İnce hamur, taze malzeme, odun ateşinde pişmiş lezzetler.",
-        "image": "pizza.svg",
+        "image": "pizza.jpg",
         "categories": [
           {
             "name": "Pizzalar",
@@ -62,7 +62,7 @@
                 "description": "Domates, mozzarella, fesleğen.",
                 "price": 72.00,
                 "currency": "₺",
-                "image": "pizza.svg",
+                "image": "pizza.jpg",
                 "tags": ["popüler", "vejetaryen"]
               },
               {

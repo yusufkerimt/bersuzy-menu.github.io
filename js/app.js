@@ -82,8 +82,9 @@ const APP = (() => {
         const card = document.createElement('article');
         card.className = 'restaurant-card';
         card.tabIndex = 0;
+        const imgSrc = r.image ? `img/${r.image}` : 'img/default.jpg';
         card.innerHTML = `
-          <img loading="lazy" src="img/${r.image || 'default.svg'}" alt="${r.name}" onerror="this.onerror=null;this.src='img/default.svg'"/>
+          <img loading="lazy" src="${imgSrc}" alt="${r.name}" onerror="this.onerror=null;this.src='img/default.jpg'"/>
           <div>
             <h3>${r.name}</h3>
             <p class="muted">${r.description || ''}</p>
@@ -161,9 +162,9 @@ const APP = (() => {
       products.forEach(p => {
         const el = document.createElement('article');
         el.className = 'product';
-        const imgSrc = p.image ? `img/${p.image}` : 'img/default.svg';
+        const imgSrc = p.image ? `img/${p.image}` : 'img/default.jpg';
         el.innerHTML = `
-          <img class="product-img" loading="lazy" src="${imgSrc}" alt="${p.name}" onerror="this.onerror=null;this.src='img/default.svg'"/>
+          <img class="product-img" loading="lazy" src="${imgSrc}" alt="${p.name}" onerror="this.onerror=null;this.src='img/default.jpg'"/>
           <div class="meta">
             <h4>${p.name} <span class="price">${formatPrice(p.price, p.currency)}</span></h4>
             <p class="muted">${p.description || ''}</p>
