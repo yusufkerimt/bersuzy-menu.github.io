@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bersuzy Company — Menü</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Bersuzy Company restoran menüleri — kategoriye göre ürünler, görseller, açıklama ve fiyat." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <button id="navToggle" class="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <div class="title">Bersuzy Company</div>
+    </div>
+    <nav id="mainNav" class="main-nav" aria-hidden="true">
+      <ul>
+        <li><a href="#" id="nav-restaurants">Restoranlar</a></li>
+        <li><a href="#" id="nav-about">Hakkında</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app" class="container">
+    <!-- Restaurant list view -->
+    <section id="restaurantsView" class="view">
+      <h1>Restoranlar</h1>
+      <div id="restaurantsGrid" class="grid"></div>
+    </section>
+
+    <!-- Menu view -->
+    <section id="menuView" class="view hidden">
+      <button id="backBtn" class="back-btn">← Restoranlara dön</button>
+      <div class="menu-header">
+        <div>
+          <h2 id="restName"></h2>
+          <p id="restDesc" class="muted"></p>
+        </div>
+        <div class="menu-actions">
+          <select id="categorySelect" aria-label="Kategori seçin"></select>
+        </div>
+      </div>
+
+      <div id="categoriesList" class="categories-tabs" role="tablist"></div>
+      <div id="productsGrid" class="grid products-grid" aria-live="polite"></div>
+    </section>
+
+    <!-- About view -->
+    <section id="aboutView" class="view hidden">
+      <h1>Hakkında</h1>
+      <p>Bersuzy Company menü uygulaması. Responsive, mobil öncelikli UI ile restoranlar ve kategoriye göre ayrılmış ürünleri gösterir.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© Bersuzy Company — Menü</small>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
